@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>株式会社アパレル・セールス・パートナーズ | 店舗販売代行・POP-UP運営</title>
+ <style>
+   /* 基本スタイル RESET & BASE */
+   * { box-sizing: border-box; margin: 0; padding: 0; }
+   body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; color: #333; line-height: 1.6; background-color: #f9f9f9; }
+   a { color: inherit; text-decoration: none; }
+
+   /* ヘッダー */
+   header { background: #fff; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 100; }
+   .logo { font-size: 1.2rem; font-weight: bold; letter-spacing: 1px; }
+   nav ul { display: flex; list-style: none; gap: 20px; }
+   nav a { font-size: 0.9rem; font-weight: 500; }
+   .btn-contact { background: #111; color: #fff; padding: 8px 18px; font-size: 0.85rem; border-radius: 4px; }
+
+   /* メインビジュアル */
+   .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 120px 20px; }
+   .hero h1 { font-size: 2.2rem; margin-bottom: 20px; font-weight: 600; line-height: 1.4; }
+   .hero p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
+   .hero .cta-btn { background: #fff; color: #111; padding: 12px 30px; font-weight: bold; border-radius: 4px; display: inline-block; }
+
+   /* セクション共通 */
+   section { padding: 80px 5%; max-width: 1100px; margin: 0 auto; }
+   .section-title { text-align: center; font-size: 1.8rem; margin-bottom: 50px; position: relative; }
+   .section-title::after { content: ''; display: block; width: 40px; height: 2px; background: #111; margin: 15px auto 0; }
+
+   /* 特長・強み GRID */
+   .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+   .card { background: #fff; padding: 30px; border-radius: 8px; border: 1px solid #eee; text-align: center; }
+   .card h3 { font-size: 1.2rem; margin-bottom: 15px; }
+   .card p { font-size: 0.95rem; color: #666; }
+
+   /* 会社概要 テーブル */
+   .company-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+   .company-table th, .company-table td { padding: 15px 20px; text-align: left; border-bottom: 1px solid #eee; font-size: 0.95rem; }
+   .company-table th { width: 25%; background: #f4f4f4; font-weight: 600; }
+
+   /* お問い合わせ */
+   .contact-form { background: #fff; padding: 40px; border-radius: 8px; max-width: 700px; margin: 0 auto; border: 1px solid #eee; }
+   .form-group { margin-bottom: 20px; }
+   .form-group label { display: block; margin-bottom: 8px; font-size: 0.9rem; font-weight: 600; }
+   .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.95rem; }
+   .submit-btn { width: 100%; padding: 12px; background: #111; color: #fff; border: none; font-size: 1rem; border-radius: 4px; cursor: pointer; }
+
+   /* フッター */
+   footer { background: #111; color: #888; text-align: center; padding: 30px; font-size: 0.8rem; margin-top: 50px; }
+ </style>
+</head>
+<body>
+
+ <!-- ヘッダー -->
+ <header>
+   <div class="logo">BRAND SALES PARTNERS</div>
+   <nav>
+     <ul>
+       <li><a href="#about">強み</a></li>
+       <li><a href="#services">サービス</a></li>
+       <li><a href="#company">会社概要</a></li>
+       <li><a href="#contact" class="btn-contact">お問い合わせ</a></li>
+     </ul>
+   </nav>
+ </header>
+
+ <!-- メインビジュアル -->
+ <div class="hero">
+   <h1>ブランドの世界観を守り、<br>売上を最大化する店舗販売代行</h1>
+   <p>高い接客力と店舗運営ノウハウで、貴社のブランド価値を高めます。</p>
+   <a href="#contact" class="cta-btn">ご相談・お見積りはこちら</a>
+ </div>
+
+ <!-- 自社の強み -->
+ <section id="about">
+   <h2 class="section-title">私たちの強み</h2>
+   <div class="grid-3">
+     <div class="card">
+       <h3>プロの販売スタッフ陣</h3>
+       <p>ブランドコンセプトを深く理解し、顧客満足度の高い接客を提供できる経験豊富なスタッフが対応します。</p>
+     </div>
+     <div class="card">
+       <h3>VMD・売上分析</h3>
+       <p>単なる接客にとどまらず、店頭レイアウト提案（VMD）や日々の売上・在庫データの分析まで一元管理します。</p>
+     </div>
+     <div class="card">
+       <h3>柔軟な運営体制</h3>
+       <p>期間限定のPOP-UPストアから常設店舗のフル代行まで、ニーズに合わせた最適な体制をご構築します。</p>
+     </div>
+   </div>
+ </section>
+
+ <!-- サービス内容 -->
+ <section id="services">
+   <h2 class="section-title">サービス内容</h2>
+   <div class="grid-3">
+     <div class="card">
+       <h3>常設店舗 販売代行</h3>
+       <p>店長・スタッフの配置から日常の店舗運営、売上・在庫管理まで包括的にサポートいたします。</p>
+     </div>
+     <div class="card">
+       <h3>POP-UPストア 運営代行</h3>
+       <p>短期催事や新店オープン時の立ち上げ・接客代行。限られた期間で最大の成果を引き出します。</p>
+     </div>
+     <div class="card">
+       <h3>店舗コンサルティング・研修</h3>
+       <p>既存店舗の販売力向上に向けたスタッフ接客研修や、VMD構築のアドバイスを行います。</p>
+     </div>
+   </div>
+ </section>
+
+ <!-- 会社概要 -->
+ <section id="company">
+   <h2 class="section-title">会社概要</h2>
+   <table class="company-table">
+     <tr>
+       <th>会社名</th>
+       <td>株式会社アパレル・セールス・パートナーズ</td>
+     </tr>
+     <tr>
+       <th>所在地</th>
+       <td>東京都渋谷区○○町 1-2-3</td>
+     </tr>
+     <tr>
+       <th>事業内容</th>
+       <td>アパレル・雑貨等の店舗販売代行、POP-UPストア企画・運営、VMDコンサルティング</td>
+     </tr>
+     <tr>
+       <th>対応エリア</th>
+       <td>首都圏、関西エリア、主要都市部（その他地域もご相談ください）</td>
+     </tr>
+   </table>
+ </section>
+
+ <!-- お問い合わせ -->
+ <section id="contact">
+   <h2 class="section-title">お問い合わせ</h2>
+   <form class="contact-form" onsubmit="event.preventDefault(); alert('送信完了（サンプル）');">
+     <div class="form-group">
+       <label>貴社名 / ブランド名</label>
+       <input type="text" placeholder="例：株式会社○○ / ○○ブランド" required>
+     </div>
+     <div class="form-group">
+       <label>お名前</label>
+       <input type="text" placeholder="例：山田 太郎" required>
+     </div>
+     <div class="form-group">
+       <label>メールアドレス</label>
+       <input type="email" placeholder="例：info@example.com" required>
+     </div>
+     <div class="form-group">
+       <label>ご相談内容</label>
+       <textarea rows="5" placeholder="POP-UPストアの運営代行について検討したい、など"></textarea>
+     </div>
+     <button type="submit" class="submit-btn">送信する</button>
+   </form>
+ </section>
+
+ <footer>
+   <p>&copy; 2026 Brand Sales Partners Inc. All Rights Reserved.</p>
+ </footer>
+
+</body>
+</html>
